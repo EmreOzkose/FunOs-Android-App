@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background2"
+    tools:context="com.example.erama.myapplication.Activities.SignInActivities.SigninLoadimage">
+
+    <TextView
+        android:id="@+id/lblStep3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/sStep3"
+        android:layout_marginRight="8dp"
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_marginLeft="8dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginTop="8dp"
+        app:layout_constraintHorizontal_bias="0.501"
+        android:layout_marginBottom="8dp"
+        app:layout_constraintBottom_toTopOf="@+id/lblSelectImage"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp" />
+
+    <TextView
+        android:id="@+id/lblSelectImage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="335dp"
+        android:text="@string/sSelectImage"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent" />
+
+    <ImageView
+        android:id="@+id/imLoadedProfile"
+        android:layout_width="185dp"
+        android:layout_height="164dp"
+        android:layout_marginLeft="16dp"
+        android:contentDescription="@string/sSpace"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:srcCompat="@drawable/person"
+        app:layout_constraintTop_toBottomOf="@+id/lblSelectImage"
+        android:layout_marginStart="16dp"
+        app:layout_constraintBottom_toTopOf="@+id/btnNext2" />
+
+    <Button
+        android:id="@+id/btnLoad"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/sLoad"
+        app:layout_constraintTop_toBottomOf="@+id/lblSelectImage"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintLeft_toRightOf="@+id/imLoadedProfile"
+        app:layout_constraintHorizontal_bias="0.486"
+        app:layout_constraintBottom_toTopOf="@+id/btnNext2" />
+
+    <Button
+        android:id="@+id/btnNext2"
+        android:layout_width="432dp"
+        android:layout_height="52dp"
+        android:layout_marginBottom="16dp"
+        android:text="@string/sNext"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent" />
+
+</android.support.constraint.ConstraintLayout>

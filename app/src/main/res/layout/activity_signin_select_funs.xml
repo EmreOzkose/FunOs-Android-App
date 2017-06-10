@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background2"
+    tools:context="com.example.erama.myapplication.Activities.SignInActivities.SigninSelectFuns">
+
+    <TextView
+        android:id="@+id/lblZero"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginTop="16dp"
+        android:text="@string/sZero"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/lblFirst"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:text="@string/sFirst"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_marginTop="8dp"
+        app:layout_constraintTop_toBottomOf="@+id/lblZero" />
+
+    <TextView
+        android:id="@+id/lblSecond"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginTop="7dp"
+        android:text="@string/sSecond"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/lblFirst" />
+
+    <TextView
+        android:id="@+id/lblThird"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginTop="8dp"
+        android:text="@string/sThird"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/lblSecond" />
+
+    <Button
+        android:id="@+id/btnFun"
+        android:layout_width="432dp"
+        android:layout_height="52dp"
+        android:text="@string/sFun"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintHorizontal_bias="0.437"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/gridLayout"
+        app:layout_constraintVertical_bias="0.5" />
+
+    <GridLayout
+        android:id="@+id/gridLayout"
+        android:layout_width="369dp"
+        android:layout_height="312dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginTop="150dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:layout_editor_absoluteY="115dp">
+
+        <ImageView
+            android:id="@+id/imageBall"
+            android:layout_width="185dp"
+            android:layout_height="155dp"
+            android:layout_column="1"
+            android:layout_row="0"
+            android:contentDescription="@string/discrBall"
+            app:srcCompat="@drawable/ball" />
+
+        <ImageView
+            android:id="@+id/imageDİce"
+            android:layout_width="185dp"
+            android:layout_height="155dp"
+            android:layout_column="1"
+            android:layout_row="1"
+            android:contentDescription="@string/discrDice"
+            app:srcCompat="@drawable/dice" />
+
+        <ImageView
+            android:id="@+id/imageFun"
+            android:layout_width="185dp"
+            android:layout_height="155dp"
+            android:layout_column="0"
+            android:layout_row="1"
+            android:contentDescription="@string/discrFun"
+            app:srcCompat="@drawable/funn" />
+
+        <ImageView
+            android:id="@+id/imageFight"
+            android:layout_width="185dp"
+            android:layout_height="155dp"
+            android:layout_column="0"
+            android:layout_row="0"
+            android:contentDescription="@string/discrFight"
+            app:srcCompat="@drawable/kali" />
+    </GridLayout>
+
+</android.support.constraint.ConstraintLayout>
